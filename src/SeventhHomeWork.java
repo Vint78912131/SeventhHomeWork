@@ -15,6 +15,10 @@ public class SeventhHomeWork {
                        new Cat("Deamon", 9),};
         Plate plate = new Plate(20);
         feedingCats(cats,plate);
+        System.out.println();
+        for (Cat cat : cats) {
+            System.out.println(cat);
+        }
     }
 
     public static void feedingCats(Cat [] cats, Plate plate) {
