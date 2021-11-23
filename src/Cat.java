@@ -43,11 +43,13 @@ public class Cat {
     }
 
     public void eat(Plate p) {
+        System.out.println(this.getName() + " is eating...");
         if (p.getFood() - this.getAppetite() < 0)
-            System.out.println("No! You're too greedy!");
+            System.out.println("No! " + this.getName() +" is too greedy!");
         else {
             p.decreaseFood(this.getAppetite());
             this.setFed(true);
+            System.out.println(this.getName() + " is fed.");
         }
     }
 
